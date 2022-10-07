@@ -4,7 +4,26 @@ using namespace std;
 
 
 //This is effective code for transposing as it does not uses extra space and just swapping one of the triangle 
-// with another half rectangle and keeping the diagonal elements same
+// with another half triangle and keeping the diagonal elements same
+/*
+* * * *
+* * * *
+* * * *
+* * * *
+
+one of the triangle means
+*
+* *
+* * *
+* * * *
+and another means
+* * * *
+  * * *
+    * *
+      *
+swap all except diagonals
+*/
+
 void effTranspose(int **arr, int m, int n)
 {
     int temp;
