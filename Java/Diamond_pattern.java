@@ -19,7 +19,7 @@ public class GFG {
             n = 1;
 
             while (n++ <= number - m) {
-                 System.out.print(" ");
+                 System.out.print("*");
             }
  
             n = 1;
