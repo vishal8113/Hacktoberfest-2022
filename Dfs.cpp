@@ -1,5 +1,5 @@
 #include <iostream>
-   #include <vector>
+#include <vector>
     using namespace std;
 
     vector <int> adj[10];
