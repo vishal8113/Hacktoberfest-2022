@@ -1,17 +1,15 @@
 import java.util.*;
  
-class ArrRotate
+class GFG
 {
     // Wrapper over the recursive function leftRotateRec()
     // It left rotates arr[] by d.
-    public static void leftRotate(int arr[], int d,
-                                                int n)
+    public static void leftRotate(int arr[], int d, int n)
     {
         leftRotateRec(arr, 0, d, n);
     }
  
-    public static void leftRotateRec(int arr[], int i,
-                                  int d, int n)
+    public static void leftRotateRec(int arr[], int i,int d, int n)
     {
         /* Return If number of elements to be rotated
         is zero or equal to array size */
@@ -35,11 +33,11 @@ class ArrRotate
         else /* If B is shorter*/   
         {
             swap(arr, i, d, n - d);
-            leftRotateRec(arr, n - d + i, 2 * d - n, d); /This is tricky/
+            leftRotateRec(arr, n - d + i, 2 * d - n, d); /*This is tricky*/
         }
     }
  
-/UTILITY FUNCTIONS/
+/*UTILITY FUNCTIONS/
 /* function to print an array */
 public static void printArray(int arr[], int size)
 {
@@ -52,8 +50,7 @@ public static void printArray(int arr[], int size)
 /*This function swaps d elements
 starting at index fi with d elements
 starting at index si */
-public static void swap(int arr[], int fi,
-                        int si, int d)
+public static void swap(int arr[], int fi,int si, int d)
 {
     int i, temp;
     for(i = 0; i < d; i++)
