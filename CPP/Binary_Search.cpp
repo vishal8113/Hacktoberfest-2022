@@ -18,7 +18,7 @@ int binarySearch(int array[], int x, int low, int high) {
         // Search the right half
         return binarySearch(array, x, mid + 1, high);
     }
-    return -1;
+    return 0;
 }
 
 int main(void) {
